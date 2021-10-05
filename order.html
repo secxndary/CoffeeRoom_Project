@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Доставка</title>
+    <!-- Кодировка страницы-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/corns.png" type="image/x-icon">
+    <link rel="preconnect" as="font" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Raleway&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+    <link rel="stylesheet" type="text/css" href="css/order.css">
+</head>
+
+<body >
+    <!-- Меню и меню-бургер (header) -->
+    <header class="header">
+        <div class="container">
+            <div class="header_body">
+                <a href="index.html" class="header_logo disabled">
+                    <img src="img/logo.png">
+                </a>
+                <div class="menu_burger">
+                    <span></span>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li>
+                            <a href="index.html" class="header_link">Главная</a>
+                        </li>
+                        <li>
+                            <a href="about_us.html" class="header_link">О нас</a>
+                        </li>
+                        <li>
+                            <a href="menu.html" class="header_link">Меню</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html" class="header_link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Имя страницы -->
+    <div class="page_name">
+        <div class="container">
+            <div class="name">Доставка</div>
+        </div>
+    </div>
+    <!--Контакты, форма, карта-->
+    <div class="information">
+        <div class="container">
+            <div class="flex_row">
+                <div class="form_column">
+        			<p class="mini-cart-label">КОРЗИНА</p>
+                    <div class="mini-cart">
+                    </div>
+                    <div class="column_text">
+                        <p class="question">Укажите адрес доставки:</p>
+                    </div>
+                        <div class="flex_form_street">
+                            <div class="form" id="form_city">
+                                <p class="write">Населённый пункт</p>
+                                <input type="text" name="city" placeholder="Например Минск" id="form_text" required>
+                            </div>
+                            <div class="form" id="form_street">
+                                <p class="write">Улица</p>
+                                <input type="text" name="street" placeholder="Например Октябрьская" id="form_text" required>
+                            </div>
+                        </div>
+                        <div class="flex_form_flat">
+                            <div class="form" id="form_house">
+                                <p class="write">Дом/корпус</p>
+                                <input type="text" name="house" id="form_text" required>
+                            </div>
+                            <div class="form" id="form_flat">
+                                <p class="write">Квартира</p>
+                                <input type="text" name="flat" id="form_text">
+                            </div>
+                            <div class="form" id="form_floor">
+                                <p class="write">Этаж</p>
+                                <input type="text" name="floor" id="form_text">
+                            </div>
+                            <div class="form" id="form_housephone">
+                                <p class="write">Домофон</p>
+                                <input type="text" name="housephone" id="form_text">
+                            </div>
+                        </div>
+                        <div class="map_column">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A33ce08cad16ecc08fc1c8865fe73c27668fae4209a441bbd894b73fb5bf1f717&amp;source=constructor"
+                                    width="80%" height="400" frameborder="0" id="map"></iframe>
+                        </div>
+                        <div class="map_legend">
+                            <img src="img/red-button.jpg" id="red_zone" class="write">— 20 BYN
+                            <img src="img/yellow-button.jpg" id="yellow_zone" class="write">— 15 BYN
+                            <img src="img/green-button.jpg" id="green_zone" class="write">— 10 BYN
+                        </div>
+                        <div class="flex_form_personal">
+                            <p class="question" id="personal_text">Личные данные</p>
+                            <div class="flex_names">
+                                <div class="form" id="form_surname">
+                                    <p class="write">Фамилия</p>
+                                    <input type="text" name="surname" id="form_text" placeholder="Иванов" required>
+                                </div>
+                                <div class="form" id="form_name">
+                                    <p class="write">Имя</p>
+                                    <input type="text" name="name" id="form_text" placeholder="Сергей" required>
+                                </div>
+                            </div>
+
+                            <div class="flex_nummail">
+                                <div class="form" id="form_number">
+                                    <p class="write">Номер телефона</p>
+                                    <input type="tel" name="phone" id="form_text" placeholder="+375 (__) ___-__-__" required>
+                                </div>
+                                <div class="form" id="form_mail">
+                                    <p class="write">E-mail</p>
+                                    <input type="mail" name="mail" placeholder="example@mail.ru" id="form_text">
+                                </div>
+                            </div>
+                          
+                            <div class="form" id="form_comment">
+                                <p class="write">Комментарий к заказу</p>
+                                <textarea rows="11" cols="20" name="comment" placeholder="Сделайте самый вкусный кофе;)" id="form_textarea"></textarea>
+                            </div>
+                            <input type="submit" id="submit_deliver" value="Оформить заказ" onclick="sendEmail()">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Футер-->
+    <footer class="footer">
+        <div class="container footer_row">
+            <div class="footer_column column1">
+                <p class="footer_link right"><img src="img/coffeeroom.png" class="logo"><br>©2020"Coffee
+                    Room"<br>Бутымова Карина, 11 группа</p>
+                <p class="footer_link"><a href="xml/xml_politic.xml" class="right">Политика конфиденциальности</a></p>
+            </div>
+            <div class="footer_column column2">
+                <p class="footer_link"><img src="img/instagram.png" class="icon">mycoffeeroom</p>
+            </div>
+            <div class="footer_column column3">
+                <p class="footer_link"><img src="img/envelope.png" class="icon">coffeeroom@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <br />
+    <!--Подключаем jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Подключаем js-скрипт-->
+    <script src="js/order.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;coordorder=longlat&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <script src="js/delivery_zones.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://yandex.st/jquery/2.2.3/jquery.js"></script>
+</body>
+
+</html>

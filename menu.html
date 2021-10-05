@@ -1,0 +1,243 @@
+<!-- Сообщает браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Меню</title>
+	<!-- Кодировка страницы-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/corns.png" type="image/x-icon">
+	<link rel="preconnect" as="font" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+</head>
+<body>
+<!--Меню и меню-бургер (header)-->
+	<header class="header">
+		<div class="container">
+			<div class="header_body">
+				<a href="index.html" class="header_logo disabled">
+					<img src="img/logo.png">
+				</a>
+				<div class="menu_burger">
+					<span></span>
+				</div>
+				<nav class="header_menu">
+					<ul class="header_list">
+						<li>
+							<a href="index.html" class="header_link">Главная</a>
+						</li>
+						<li>
+							<a href="about_us.html" class="header_link">О нас</a>
+						</li>
+						<li>
+							<a href="menu.html" class="header_link">Меню</a>
+						</li>
+						<li>
+							<a href="contacts.html" class="header_link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+<!--Имя страницы-->
+	<div class="page_name">
+		<div class="container">
+			<div class="name">Меню</div>
+		</div>
+	</div>
+<!--Меню-->
+	<div class="main_menu">
+		<div class="container">
+			<div class="menu_lists">
+				<div class="coffee">
+					<div class="list_name">Кофе</div>
+					<table class="coffee_menu">
+						<form id="menu_form">
+							<tr class="coffee_item">
+								<td id="latte_name">Латте<div class="line"></div></td>
+								<td class="td_price" id="latte_price" rowspan="2">4.0</td>
+								<td><button type="button" class="add-to-cart" id="latte"></button> </td>
+							</tr>
+							<tr class="consist">
+								<td>Свежесваренный кофе и вспененное молоко</td>
+							</tr>
+							<tr class="coffee_item">
+								<td id="capuccino_name">Каппучино<div class="line"></div></td>
+								<td class="td_price" id="capuccino_price" rowspan="2">3.5</td>
+								<td><button type="button" class="add-to-cart" id="capuccino"></button> </td>
+							</tr>
+							<tr class="consist">
+								<td>Двойная порцию черного кофе, горячее молоко и густая молочная пена</td>
+							</tr>
+							<tr class="coffee_item">
+								<td id="espresso_name">Эспрессо<div class="line"></div></td>
+								<td class="td_price" id="espresso_price">2.8</td>
+								<td><button type="button" class="add-to-cart" id="espresso"></button> </td>
+							</tr>
+							<tr class="coffee_item">
+								<td id="raf_name">Раф<div class="line"></div></td>
+								<td class="td_price" rowspan="2" id="raf_price">4.5</td>
+								<td><button type="button" class="add-to-cart" id="raf"></button> </td>
+							</tr>
+							<tr class="consist">
+								<td>Эспрессо с добавлением сливок с небольшой пенкой</td>
+							 </tr>
+							<tr class="coffee_item">
+								<td id="peanut_latte_name">Арахисовый латте<div class="line"></div></td>
+								<td class="td_price" rowspan="2" id="peanut_latte_price">4.5</td>
+								<td><button type="button" class="add-to-cart" id="peanut_latte"></button> </td>
+							</tr>
+							<tr class="consist">
+								<td>Эспрессо, ванильный сахар, сливки и арахисовая паста</td>
+							 </tr>
+							 <tr class="coffee_item">
+								<td id="hot_chocolate_name">Горячий шоколад<div class="line"></div></td>
+								<td class="td_price" id="hot_chocolate_price">3.5</td>
+								 <td><button type="button" class="add-to-cart" id="hot_chocolate"></button> </td>
+							</tr>
+							 <tr class="coffee_item">
+								<td id="mokko_name">Мокко<div class="line"></div></td>
+								<td class="td_price" rowspan="2" id="mokko_price">4.3</td>
+								 <td><button type="button" class="add-to-cart" id="mokko"></button> </td>
+							 </tr>
+							<tr class="consist">
+								<td>Эспрессо с добавлением молока и какао-порошка</td>
+							 </tr>
+							 <tr class="coffee_item">
+								<td id="glasse_name">Глясе<div class="line"></div></td>
+								<td class="td_price" rowspan="2" id="glasse_price">5.0</td>
+								 <td><button type="button" class="add-to-cart" id="glasse"></button> </td>
+							 </tr>
+							<tr class="consist">
+								<td>Холодный эспрессо с шариком мороженого и тертым шоколадом</td>
+							 </tr>
+							 <tr class="coffee_item">
+								<td id="cocoa_name">Какао<div class="line"></div></td>
+								<td class="td_price" id="cocoa_price">3.0</td>
+								 <td><button type="button" class="add-to-cart" id="cocoa"></button> </td>
+							 </tr>
+						</form>
+					</table>
+				</div>
+				<div class="dessert">
+					<div class="list_name">Десерты</div>
+					<table class="coffee_menu">
+						<tr class="coffee_item">
+							<td id="cheesecake_name">Классический чизкейк<div class="line"></div></td>
+							<td class="td_price" rowspan="2" id="cheesecake_price">3.5</td>
+							<td><button type="button" class="add-to-cart" id="cheesecake"></button> </td>
+						</tr>
+						<tr class="consist">
+							<td>Сочетание песочного теста и нежного творожного сыра</td>
+						</tr>
+						<tr class="coffee_item">
+							<td id="apple_pie_name">Яблочный пирог<div class="line"></div></td>
+							<td class="td_price" rowspan="2" id="apple_pie_price">3.5</td>
+							<td><button type="button" class="add-to-cart" id="apple_pie"></button> </td>
+						</tr>
+						<tr  class="consist">
+							<td>Песочное тесто с начинкой из слегка запечённых яблочных долек в желе</td>
+						</tr>
+						<tr class="coffee_item">
+							<td id="croissant_name">Круассан с шоколадом<div class="line"></div></td>
+							<td class="td_price" id="croissant_price">3.0</td>
+							<td><button type="button" class="add-to-cart" id="croissant"></button> </td>
+						</tr>
+						<tr class="coffee_item">
+							<td id="choco_cheesecake_name">Шоколадный чизкейк<div class="line"></div></td>
+							<td class="td_price" rowspan="2" id="choco_cheesecake_price">4.3</td>
+							<td><button type="button" class="add-to-cart" id="choco_cheesecake"></button> </td>
+						</tr>
+						<tr class="consist">
+							<td>Классический чизкейк с шоколадным центром и глазурью</td>
+						 </tr>
+						<tr class="coffee_item">
+							<td id="caramel_cheesecake_name">Карамельный чизкейк<div class="line"></div></td>
+							<td class="td_price" rowspan="2" id="caramel_cheesecake_price">4.3</td>
+							<td><button type="button" class="add-to-cart" id="caramel_cheesecake"></button> </td>
+						</tr>
+						<tr class="consist">
+							<td>Классический чизкейк с прослойкой сливочной карамели</td>
+						 </tr>
+						<tr class="coffee_item">
+							<td id="honeyvik_name">Медовик<div class="line"></div></td>
+							<td class="td_price" id="honeyvik_price">3.8</td>
+							<td><button type="button" class="add-to-cart" id="honeyvik"></button> </td>
+						</tr>
+						<tr class="coffee_item">
+							<td id="brownie_name">Брауни<div class="line"></div></td>
+							<td class="td_price" rowspan="2" id="brownie_price">4.0</td>
+							<td><button type="button" class="add-to-cart" id="brownie"></button> </td>
+						</tr>
+						<tr class="consist">
+							<td>Шоколадный десерт с цельным миндалем, орехом пекан и карамелью</td>
+						</tr>
+						<tr class="coffee_item">
+							<td id="tiramisu_name">Тирамису<div class="line"></div></td>
+							<td class="td_price" rowspan="2" id="tiramisu_price">4.5</td>
+							<td><button type="button" class="add-to-cart" id="tiramisu"></button> </td>
+						</tr>
+						<tr class="consist">
+							<td>Сочетания кофе, сливок, сыра маскарпоне с печеньем</td>
+						</tr>
+						<tr class="coffee_item">
+							<td id="carrot_cake_name">Морковный торт<div class="line"></div></td>
+							<td class="td_price" id="carrot_cake_price">3.5</td>
+							<td><button type="button" class="add-to-cart" id="carrot_cake"></button> </td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<p class="mini-cart-label">КОРЗИНА</p>
+			<div class="mini-cart"></div>
+<!--Кнопки заказа -->
+			<div class="flex_order_buttons">
+				<a href="order.html"><input type="button" value="Заказать доставку" id="order_button"></a>
+				<a href="self_order.html"><input type="button" value="Самовывоз" id="self_order_button"></a>
+			</div>
+		</div>
+	</div>
+<!--Акции и скидки-->
+	<div class="sale_coffee">
+		<div class="container">
+			<div class="list_name sale_coffee_name">Текущие акции и скидки от <span class="highlight">Coffee Room</span></div>
+			<div class="sale_row">
+				<div class="sale_item1">
+					<p class="img_sale"><img src="img/sale1.jpg" ></p>
+					<p class="sale_text">Ежедневно до <span class="highlight">10:00</span> скидка <span class="highlight">20%</span> на все кофейное меню!</p>
+				</div>
+				<div class="sale_item2">
+					<p class="img_sale"><img src="img/sale2.jpg" ></p>
+					<p class="sale_text">Получи специальную <span class="highlight">карточку</span> при первой покупке, собери 5 отметок и <span class="highlight">любой</span> 6-й кофе c круассаном твой!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--Футер-->
+	<footer class="footer">
+		<div class="container footer_row">
+			<div class="footer_column column1">
+				<p class="footer_link right"><img src="img/coffeeroom.png"  class="logo"><br>©2020"Coffee Room"<br>Бутымова Карина, 11 группа</p>
+				<p class="footer_link"><a href="xml/xml_politic.xml" class="right">Политика конфиденциальности</a></p>
+			</div>
+			<div class="footer_column column2">
+				<h2 class="column_name">Связь с нами</h2>
+				<p class="footer_link"><img src="img/envelope.png" class="icon">coffeeroom@gmail.com</p>
+				<p class="footer_link"><img src="img/instagram.png"  class="icon">mycoffeeroom</p>
+			</div>
+			<div class="footer_column column3">
+				<h2 class="column_name">Контакты</h2>
+				<p class="footer_link"><img src="img/geo.png"  class="icon">просп. Независимости, 46</p>
+				<p class="footer_link"> <img src="img/telephone.png"  class="icon">+ 375 (29) 120-10-05</p>
+			</div>
+		</div>
+	</footer>
+	<!--Подключаем jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--Подключаем файл js-скрипта-->
+	<script src="js/menu.js"></script>
+</body>
+</html>	

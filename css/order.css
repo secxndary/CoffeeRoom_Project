@@ -1,0 +1,397 @@
+/*Обнуление*/
+*,*:before, *:after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+	width: 100%;
+}
+/*Основне стили*/
+.container{
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0 15px;
+}
+/*Имя страницы*/
+.page_name{
+	padding: 11% 0;
+	background:url(../img/background1.jpg) center center no-repeat;
+  	background-size: cover;
+}
+.name{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	color: #F18039;
+	text-align: center;
+}
+@media (max-width: 768px) {
+	.name{
+		font-size: 45px;
+	}
+}
+@media (max-width: 576px) {
+	.name{
+		font-size: 40px;
+	}
+}
+/*Контакты, форма, карта*/
+.information{
+	padding: 5% 0;
+	background-color: #F4F6EA;
+}
+.flex_row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.info_column{
+	flex: 50%; 
+	padding-right: 2%;
+}
+.form_column{
+	flex: 50%;
+	padding-left: 2%;
+}
+.question{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	color: #271300;
+	margin-bottom: 4%;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-decoration-color: #F18039;
+}
+.write{
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 23px;
+	color: #271300;
+	margin-bottom: 1%;
+}
+#form_text, #form_textarea{
+	width: 100%;
+  	padding: 2% 3%;
+  	background: rgba(39, 19, 0, 0.3);
+  	font-family: Raleway;
+  	font-weight: 400;
+	font-size: 20px;
+}
+#form_textarea1{
+	width: 100%;
+  	padding: 2% 3%;
+  	background: rgba(39, 19, 0, 0.3);
+  	font-family: Raleway;
+  	font-weight: 400;
+	font-size: 20px;
+}
+#form_text{
+	height: 60px;
+}
+#form_text1{
+	width: 100%;
+  	padding: 2% 3%;
+  	background: rgba(39, 19, 0, 0.3);
+  	font-family: Raleway;
+  	font-weight: 400;
+	font-size: 20px;
+	height: 60px;
+}
+#form_text2{
+	width: 100%;
+  	padding: 2% 3%;
+  	background: rgba(39, 19, 0, 0.3);
+  	font-family: Raleway;
+  	font-weight: 400;
+	font-size: 20px;
+	height: 60px;
+}
+#form_text3{
+	width: 100%;
+  	padding: 2% 3%;
+  	background: rgba(39, 19, 0, 0.3);
+  	font-family: Raleway;
+  	font-weight: 400;
+	font-size: 20px;
+	height: 60px;
+}
+.submit{
+	width: 50%;
+	padding: 3% 0 ;
+	background: #F18039;
+	font-family: Montserrat;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	color: #F4F6EA;
+	border: 3px solid #F18039;
+	transition-duration: 0.4s;
+    cursor: pointer;
+}
+.submit:hover {
+	/* border:; */
+	background-color: #F4F6EA; 
+    color: #F18039; 
+}
+
+.h_text{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 26px;
+	color: #271300;
+	margin-bottom: 3%;
+}
+.div_text{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+	color: #271300;
+	padding-bottom: 5%;
+}
+.f_column1, .f_column2, .f_column3{
+	max-width: 100%;
+	border: 20px solid;
+	border-image: url(../img/border.png) 20;
+	padding: 3% 0 0 4%;
+}
+.f_column1{
+	margin-top: 1%;
+}
+.f_column2, .f_column3{
+	margin-top: 4%;
+}
+
+#form_text, #form_textarea{
+	margin-bottom: 5%;
+}
+.map_column{
+	margin-top: 7%;
+	width: 100%;
+}
+@media (max-width: 768px) {
+	.info_column{
+		order: 1;
+		margin: 0 auto;
+	}
+	.form_column{
+		order: 3;
+	}
+	.map_column{
+		order: 2;
+		margin-bottom: 10%;
+	}
+	.h_text{
+		font-size: 22px;
+	}
+	.question{
+		font-size: 26px;
+	}
+	.write, #form_text,
+	#form_textarea, .div_text{
+		font-size: 19px;
+	}
+	.f_column1, .f_column2, .f_column3{
+		border: 15px solid;
+		border-image: url(../img/border.png) 15;
+	}
+}
+@media (max-width: 576px) {
+	.submit, .submit_deliver{
+		padding: 3% 0 ;
+		font-size: 17px;
+	}
+}
+
+.flex_form_street, 
+.flex_form_flat,
+.flex_names,
+.flex_nummail {
+    display: flex;
+}
+
+.flex_form_flat,
+.flex_names,
+.flex_nummail {
+   justify-content: space-between;
+}
+
+#form_city {
+    width: 35%;
+    margin-right: 10%;
+}
+
+#form_street {
+    width: 55%;
+}
+
+#form_house {
+    width: 20%;
+}
+
+#form_house, #form_flat, #form_floor, #form_housephone {
+    width: 18%;
+}
+
+.form_button {
+    margin-top: 5%;
+}
+
+.submit_deliver {
+    width: 45.3%;
+    padding: 2% 0;
+    background: #F18039;
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+    color: #F4F6EA;
+    border: 3px solid #F18039;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.submit_deliver:hover {
+    background-color: #F4F6EA; 
+    color: #F18039; 
+}
+
+#map {
+    margin: 0 10%;
+}
+
+#deliver_check {
+    display: none;
+	margin-top: 2%;
+	font-size: 24px;
+	margin-bottom: -4.4%;
+}
+
+.flex_form_button {
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#personal_text {
+	margin-top: 5%;
+}
+
+#form_surname, #form_name,
+#form_number, #form_mail {
+	width: 45%;
+}
+
+#submit_deliver {
+	font-family: Montserrat;
+	font-weight: 600;
+	text-align: center;
+	font-size: 21px;
+    color: #271300;
+    background-color: #F18039;
+    border: 2px solid #F18039;
+    transition-duration: 0.4s;
+    cursor: pointer;
+	width: 100%;
+	height: 70px;
+	text-transform: uppercase;
+}
+
+#submit_deliver:hover {
+	background-color: #F4F6EA; 
+    color: #F18039;
+}
+
+.mini-cart-label {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 44px;
+	margin-bottom: 3%;
+	text-transform: uppercase;
+	color: #F18039;
+	margin-left: 3%;
+}
+
+.mini-cart {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 26px;
+	margin-bottom: 7%;
+	text-transform: uppercase;
+	margin-top: 2%;
+	margin-left: 3%;
+}
+
+#bill {
+	margin-top: 1%;
+}
+
+.del-goods {
+	background: url(../img/del-button.png) 0 0 / 100% no-repeat;
+	width: 2%;
+	height: 23px;
+	position: relative;
+	top: 3px;
+	margin-right: 0.3%;
+	transition: 0.5s;
+}
+
+.plus-goods {
+	background: url(../img/plus-button.png) 0 0 / 100% no-repeat;
+	width: 18px;
+	height: 18px;
+	position: relative;
+	top: 0.6px;
+	margin-right: 1.3%;
+	transition: 1s;
+}
+
+.minus-goods {
+	background: url(../img/minus-button.png) 0 0 / 100% no-repeat;
+	width: 21px;
+	height: 18px;
+	position: relative;
+	top: 0.65px;	
+	margin-left: 1.5%;
+	background-position: center;
+	transition: 1s;
+}
+
+button:active, button:focus {
+	outline: none;
+}
+
+.plus-goods:active, .minus-goods:active {
+	transform: scale(0.7, 0.7);
+}
+
+.del-goods:active {
+	transform: scale(0.8, 0.8);
+}
+
+#red_zone, #yellow_zone, #green_zone {
+	position: relative;
+	top: 23px;
+	margin-right: 1%;
+	margin-left: 2%;
+	
+}
+
+.map_legend {
+	margin: 0.5% 0 7% 30%;
+	font-size: 17px;
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 500;
+}

@@ -1,0 +1,520 @@
+/*Обнуление*/
+*,*:before, *:after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+	width: 100%;
+}
+/*Основне стили*/
+.container{
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0 15px;
+}
+/*Раздел лендинг */
+.landing_part{
+	padding: 11% 0;
+	background-color: #271300;
+}
+.landing_rows{
+	display: flex;
+	justify-content: space-between;
+}
+.img{
+	margin-top: -50px;
+}
+.text_h1{
+	position: relative;
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 60px;
+	color: #F4F6EA;
+	text-transform: uppercase;
+
+	transform: translate(0, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+.text_h1.active{
+	transform: translate(0, 0);
+	opacity: 1;
+}
+
+.colortext{
+	color: #F18039;
+}
+.text_h2{
+	font-family: Raleway;
+	font-weight: 500;
+	font-size: 25px;
+	color: #F4F6EA;
+	padding-top: 9%;
+
+	transform: translate(0, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+.text_h2.active{
+	transform: translate(0, 0);
+	opacity: 1;
+	transition: all 0.8s ease 0.5s;
+}
+button{
+	margin-top: 11%;
+	max-width: 100%;
+}
+.button{
+	font-family: Montserrat;
+	font-weight: 600;
+    color: #F4F6EA;
+    background-color: #F18039;
+    border: 2px solid #F18039;
+    text-align: center;
+    padding: 4% 8%;
+    font-size: 25px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    transform: translate(0, 100%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+
+.button.active{
+	transform: translate(0, 0);
+	opacity: 1;
+	transition: all 1s ease 0s;
+}
+.button:hover {
+	background-color: #F4F6EA; 
+    color: #F18039; 
+}
+
+@media (max-width: 992px) {
+	.column1{
+		max-width: 50%;
+	}
+	.text_h1{
+		font-size: 50px;
+	}
+	.img{
+		max-width:100%;
+		margin-top: -20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.landing_part{
+		padding: 17% 0;
+	}
+	.text_h1{
+		font-size: 40px;
+	}
+	.text_h2{
+		font-size: 16px;
+	}
+	.button{
+		font-size: 18px;
+	}
+}
+@media (max-width: 576px) {
+	.img{
+		max-width:100%;
+		margin-top: -20px;
+	}
+	.text_h1{
+		font-size: 28px;
+	}
+	.button{
+		font-size: 15px;
+	}
+}
+@media (max-width: 350px) {
+	.column_img{
+		display: none;
+	}
+	.column1{
+		max-width: 100%;
+	}
+	.button{
+	    font-size: 17px;
+	}
+}
+/*Раздел "О нас"*/
+.about_us{
+	background-color: #F4F6EA;
+	padding: 3% 0;
+}
+.about_us img{
+	max-width: 100%;
+}
+.block_row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;	
+}
+.block_column1, .block_column2{
+	flex: 50%;
+	transform: scale(0.3);
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+.block_column1{
+	padding-right: 3%;
+}
+.block_column2{
+	padding-left: 3%;
+}
+.block_column1{
+	display: flex;
+	flex-wrap: wrap;
+}
+.block_column1.active, .block_column2.active{
+	transform: scale(1);
+	opacity: 1;
+}
+.about{
+	font-family: Montserrat;
+	color: #271300;
+	font-weight: 500;
+	font-size: 55px;
+	text-decoration: none;
+}
+.text_colomn1, .text_colomn2{ 
+	font-family: Raleway;
+	font-weight: 400;
+	font-size: 22px;
+	color: #271300;
+	height: 214px;
+	max-width: 100%;
+	text-align: justify;
+}
+.text_colomn1{
+	padding-top: 10%;
+}
+.text_colomn2{
+	padding-top: 5%;
+}
+@media (max-width: 992px) {
+	.about{
+		font-size: 40px;
+	}
+	.text_colomn1, .text_colomn2{
+		font-size: 20px;
+	 }
+}
+@media (max-width: 768px) {
+	.about{
+		font-size: 38px;
+	}
+	.text_colomn1, .text_colomn2{
+		font-size: 20px;
+	 }
+	 .block_column2,.text_colomn1{
+		order: 1;
+		flex: 100%;
+		text-align: center;
+		margin: auto;
+	}
+	.block_column1, .img1{
+		order: 2;
+		flex: 100%;
+		margin: auto;
+	}
+	.img1 img, .img2 img{
+		display: block;
+		margin: auto;
+	}
+}
+@media (max-width: 576px) {
+	.about {
+		font-size: 38px;
+	}
+	.text_colomn1, .text_colomn2{
+		text-align: center;
+		font-size: 18px;
+		padding-top: 10%;
+	 }
+	.block_row{
+		justify-content: center;
+	}
+	.block_column2,.text_colomn1{
+		order: 1;
+		flex: 100%;
+		text-align: center;
+		margin: auto;
+	}
+	.block_column1, .img1{
+		order: 2;
+		flex: 100%;
+		margin: auto;
+	}
+	.img1 img, .img2 img{
+		display: block;
+		margin: auto;
+	}
+}
+/*Раздел "Меню"*/
+.div_menu{
+	padding: 3% 0;
+	background-color: #271300;
+	background-image: url('../img/corn.png');
+	background-repeat: no-repeat;
+	transition-duration: 0.7s;
+}
+.h2_menu{
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 50px;
+	text-align: center;
+	color: #F4F6EA;
+}
+.button_row{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: no-wrap;
+}
+.btn{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	color: #F4F6EA;
+	padding: 3% 0 5% 0;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+.menu {
+	display: none;
+}
+.menu.active {
+	display: block;
+}
+.btn.active{
+	color: #F18039;
+	font-size: 35px;
+}
+.div_menu.active{
+	transition-duration: 0.7s;
+	background-image: url('../img/cake.png');
+	background-position: right bottom;
+}
+.coffee_menu{
+	max-width: 50%;
+	margin: auto;
+
+	transform: translate(0, 40%);
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+.coffee_menu.active{
+	transform: translate(0, 0);
+	opacity: 1;
+}
+.dessert{
+	transform: translate(0, 0);
+	opacity: 1;
+}
+.coffee_item{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 33px;
+	color: #F4F6EA;	
+	line-height: 60px;
+}
+.consist{
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 17px;
+	color: #F18039;
+	width: 50%;
+}
+.line{
+	border-bottom: 2px solid #F4F6EA;
+}
+.td_price{
+	text-align: right;
+	vertical-align: top;
+	padding: 1% 0;
+}
+.button_more{
+	font-family: Montserrat;
+	font-weight: 500;
+    color: #F4F6EA;
+    background-color: #F18039;
+    border: 2px solid #F18039;
+    text-align: center;
+    padding:  2% 9%;
+    font-size: 25px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    transform: translate(0, 60%);
+	opacity: 0;
+	transition: all 1.3s ease 0s;
+}
+.button_more.active{
+	transform: translate(0, -50%);
+	opacity: 1;
+}
+.button_more:hover {
+	background-color: #F4F6EA; 
+    color: #F18039; 
+}
+@media (max-width: 768px) {
+	.h2_menu{
+		font-size: 35px;
+	}
+	.btn{
+		font-size: 23px;
+	}
+	.btn.active{
+		font-size: 26px;
+	}
+	.coffee_item{
+		font-size: 25px;
+	}
+	.consist{
+		font-size: 15px;
+	}
+	.button_more{
+    	font-size: 18px;
+	}
+	.div_menu{
+		background-position: left bottom;
+	}
+	.div_menu, .div_menu.active{
+		background-size: 60%;
+	}
+	.coffee_menu{
+		max-width: 70%;
+	}
+}
+@media (max-width: 576px) {
+	.btn{
+		font-size: 20px;
+	}
+	.btn.active{
+		font-size: 24px;
+	}
+	.coffee_menu{
+		max-width: 80%;
+	}
+	.button_more{
+    	font-size: 15px;
+	}
+	.div_menu,.div_menu.active{
+		background-size: 70%;
+	}
+}
+/*Раздел "Бронирование"*/
+.div_booking{
+	width: 100%;
+	background-color: #F4F6EA;
+	padding: 5% 0;
+}
+.h2_booking{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	text-align: center;
+	color: #F18039;
+	text-transform: uppercase;
+}
+.form_row{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.form_column{
+	margin: 20px; 
+	flex: 1 1 33.333%;
+	overflow: hidden;
+}
+.label{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 25px;
+	color: #271300;
+	padding: 5% 0 1% 0; 
+}
+
+.form1{
+	width: 100%;
+	height: 60px;
+	padding: 10px 15px;
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	background: #F4F6EA;
+	font-family: Montserrat;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.btn_book{
+	font-family: Montserrat;
+	font-weight: 600;
+	text-align: center;
+	font-size: 18px;
+    color: #271300;
+    background-color: #F18039;
+    border: 2px solid #F18039;
+    transition-duration: 0.4s;
+    cursor: pointer;
+	width: 100%;
+	height: 60px;
+	margin-top: 3%;
+	text-transform: uppercase;
+}
+.btn_book:hover {
+	background-color: #F4F6EA; 
+    color: #F18039; 
+}
+.item_show{
+	transform: translateX(-100%);
+	transition: all 0.8s ease 0s;
+}
+.item_show .active, 
+.active .item_show{
+	transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+	.h2_booking{
+		font-size: 30px;
+	}
+	.label{
+		font-size: 20px;
+	}
+
+	.form,.btn_book{
+		height: 50px;
+	}
+	input[placeholder]{
+		font-size: 15px;
+	}
+}
+@media (max-width: 576px) {
+	.h2_booking{
+		font-size: 25px;
+	}
+	.form_column{
+		flex: 50%;
+	}
+	.label{
+		font-size: 15px;
+	}
+	.form, .btn_book{
+		height: 45px;
+	}
+	.btn_book{
+		margin-top: 5%;
+	}
+}

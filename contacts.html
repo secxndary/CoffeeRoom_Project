@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Контакты</title>
+	<!-- Кодировка страницы-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/corns.png" type="image/x-icon">
+	<link rel="preconnect" as="font" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/contacts.css">
+</head>
+<body>
+<!-- Меню и меню-бургер (header) -->
+	<header class="header">
+		<div class="container">
+			<div class="header_body">
+				<a href="index.html" class="header_logo disabled">
+					<img src="img/logo.png">
+				</a>
+				<div class="menu_burger">
+					<span></span>
+				</div>
+				<nav class="header_menu">
+					<ul class="header_list">
+						<li>
+							<a href="index.html" class="header_link">Главная</a>
+						</li>
+						<li>
+							<a href="about_us.html" class="header_link">О нас</a>
+						</li>
+						<li>
+							<a href="menu.html" class="header_link">Меню</a>
+						</li>
+						<li>
+							<a href="contacts.html" class="header_link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+<!-- Имя страницы -->
+	<div class="page_name">
+		<div class="container">
+			<div class="name">Контакты</div>
+		</div>
+	</div>
+<!--Контакты, форма, карта-->
+	<div class="information">
+		<div class="container">
+			<div class="flex_row">
+				<div class="info_column">
+					<div class="f_column1">
+						<p class="h_text">Время работы:</p>
+						<p class="div_text"><img src="img/alarm-clock.png"  class="icon">пн-пт 08:00–20:00</p>
+						<p class="div_text"><img src="img/alarm-clock.png"  class="icon">сб,вс 10:00–20:00</p>
+					</div>
+					<div class="f_column2">
+						<p class="h_text">Контакты кофейни:</p>
+						<p class="div_text num1"><img src="img/geoblack.png" class="icon">просп. Независимости, 46</p>
+						<p class="div_text num2"><img src="img/telephoneblack.png"  class="icon">+ 375 (29) 120-10-05</p>
+					</div>
+					<div class="f_column3">
+						<p class="h_text">Обучение и трудоустройство:</p>
+						<p class="div_text num1"><img src="img/telephoneblack.png"  class="icon">+ 375 (29) 143-10-05</p>
+						<p class="div_text num2"><img src="img/envelopeblack.png" class="icon">  job.room@gmail.com</p>
+					</div>
+				</div>
+				<div class="form_column">
+					<div class="column_text">
+						<p class="question">Есть вопрос?</p>
+						<p class="write">Напиши нам прямо сейчас</p>
+					</div>
+					<form action="php/contacts.php" method="post">
+						<div class="form">
+							<input type="text" name="name" placeholder="Ваше имя" id="form_text" required>
+						</div>
+						<div class="form">
+							<input type="email" name="email" placeholder="Ваш e-mail" id="form_text" required>
+						</div>
+						<div class="form">
+							<textarea rows="11" cols="40" name="qtext" placeholder="Введите ваше сообщение..." id="form_textarea" required></textarea>
+						</div>
+						<div class="form_button">
+							 <input type="submit" value="Отправить" class="submit">
+						</div>
+					</form>
+					</div>
+				<div class="map_column">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A728dfb0fdf56fd5b66235b134a0143ec3f42fb79475d0ad461b37cb6c28085f8&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--Футер-->
+	<footer class="footer">
+		<div class="container footer_row">
+			<div class="footer_column column1">
+				<p class="footer_link right"><img src="img/coffeeroom.png"  class="logo"><br>©2020"Coffee Room"<br>Бутымова Карина, 11 группа</p>
+				<p class="footer_link"><a href="xml/xml_politic.xml" class="right">Политика конфиденциальности</a></p>
+			</div>
+			<div class="footer_column column2">
+				<p class="footer_link"><img src="img/instagram.png"  class="icon">mycoffeeroom</p>
+			</div>
+			<div class="footer_column column3">
+				<p class="footer_link"><img src="img/envelope.png"  class="icon">coffeeroom@gmail.com</p>
+			</div>
+		</div>
+	</footer> 
+<br/>
+	<!--Подключаем jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--Подключаем js-скрипт-->
+	<script src="js/contacts.js"></script>
+</body>
+</html>
